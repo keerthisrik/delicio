@@ -1,0 +1,32 @@
+.shop-now-link {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .shop-now-link:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    max-width: 700px;
+  }
+  
+  .table {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  
+  .text-muted {
+    font-size: 1.2rem;
+  }
+  
+  .d-flex {
+    gap: 10px;
+  }
+  

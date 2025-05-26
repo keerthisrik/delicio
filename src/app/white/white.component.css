@@ -1,0 +1,103 @@
+/* General spacing */
+* {
+    margin-top: 20px;
+    margin-bottom: 3px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between columns */
+}
+
+.col {
+    flex: 0 0 calc(25% - 20px); /* Ensures 4 columns per row */
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    width: 100%;
+    max-width: 280px; /* Ensures card size is consistent */
+    height: 400px; /* Fixed height for all cards */
+    background-color: #f9f9f9; /* Light gray background for cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover animation */
+    position: relative; /* Ensures flexibility in element positioning */
+}
+
+.cards:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Wrapper to ensure image ratio and prevent distortion */
+.card-img-wrapper {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    overflow: hidden;
+    border-radius: 8px; /* Rounded corners for wrapper */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1; /* Placeholder background in case image doesn't load */
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the whole image is visible without distortion */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Style for h6 */
+.cards h6 {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+/* Style for price */
+.cards p {
+    font-size: 1.2rem;
+    color: #16a085;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: center;
+    flex-grow: 1; /* Makes sure the price stays on top of the button */
+}
+
+/* Footer for price and button */
+.card-footer {
+    width: 100%;
+    text-align: center;
+    margin-top: auto; /* Pushes footer to the bottom of the card */
+}
+
+.cards .btn {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.cards .btn:hover {
+    background-color: #2980b9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}

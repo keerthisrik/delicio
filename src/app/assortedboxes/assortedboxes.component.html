@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row row-cols-4 g-4">
+    <div class="col" *ngFor="let d of details">
+      <div class="cards">
+        <div class="card-img-wrapper">
+          <img [src]="d.src" [alt]="d.alt" class="card-img">
+        </div>
+        <h6>{{d.title}}</h6>
+        <p>{{d.price}}</p>
+        <div class="card-footer">
+          <button class="btn btn-primary" (click)="addToCart(d)">{{ d.button }}</button>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

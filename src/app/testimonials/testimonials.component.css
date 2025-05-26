@@ -1,0 +1,63 @@
+/* Reviews Section Styles */
+.reviews-section {
+  background-color: #fff8f0; /* Light cream background */
+  padding: 50px 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.reviews-title {
+  font-size: 2rem;
+  color: #5c2e00; /* Rich chocolate tone */
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.review-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  max-width: 350px;
+  flex: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Slight lift on hover */
+}
+
+.review-text {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.review-author {
+  font-size: 1rem;
+  color: #a04d00; /* Highlight author name */
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .reviews-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-card {
+    width: 90%; /* Use most of the available width on small screens */
+  }
+}

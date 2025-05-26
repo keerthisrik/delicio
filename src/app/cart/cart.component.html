@@ -1,0 +1,34 @@
+<div class="container my-5">
+    <h2 class="text-center">Your Cart</h2>
+  
+    <div *ngIf="items.length > 0; else emptyCart">
+      <table class="table table-bordered mt-4">
+        <thead class="table-dark">
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of items">
+            <td>{{ item.title }}</td>
+            <td>{{ item.price }}</td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <div class="d-flex justify-content-between align-items-center mt-3">
+        <button class="btn btn-danger" (click)="clearCart()">Clear Cart</button>
+        <a class="shop-now-link" [routerLink]="['/shop-now']">Shop More Products</a>
+        <button class="btn btn-success" (click)="proceedToPayment()">Proceed to Payment</button>
+      </div>
+    </div>
+  
+    <ng-template #emptyCart>
+      <p class="text-center text-muted">Your cart is empty.</p>
+      <div class="text-center mt-3">
+        <a class="btn btn-primary shop-now-link" [routerLink]="['/shop-now']">Shop Now</a>
+      </div>
+    </ng-template>
+  </div>
+  

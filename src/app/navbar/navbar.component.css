@@ -1,0 +1,26 @@
+*{
+    font-family:"Dancing Script", cursive; ;
+    font-weight: bolder;
+font-size: 35px;
+}
+.navbar {
+    height: 55px;
+     /* Adjust height as needed */
+  }
+
+  .navbar-brand {
+    color: #7B3F00 !important; /* Chocolate color */
+    font-weight: bold; /* Optional: Makes the text bold */
+  }
+  .navbar-nav .nav-link {
+    font-size: 1.05rem; /* Slightly larger font size for links */
+    color: #000; /* Default link color */
+    transition: color 0.3s ease; /* Smooth hover transition */
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #7B3F00 !important; /* Chocolate color on hover */
+  }
+ .offcanvas-body{
+    font-size: 700px;
+ }
